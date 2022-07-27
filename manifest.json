@@ -4,5 +4,8 @@
 	"version": "1.0.0",
 	"author": "thomas",
 	"permissions": ["storage", "tabs", "cookies", "proxy"],
-	"host_permissions": ["*://*/"]
+	"host_permissions": ["*://*/"],
+	"action": {
+		"default_popup": "index.html"
+	}
 }

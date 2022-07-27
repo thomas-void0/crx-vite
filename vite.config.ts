@@ -54,7 +54,12 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
 			target: 'es2015',
 			chunkSizeWarningLimit: 2000,
 			sourcemap: VITE_NODE_ENV === 'development',
-			minify: VITE_NODE_ENV === 'production' ? 'esbuild' : false
+			minify: VITE_NODE_ENV === 'production' ? 'esbuild' : false,
+			rollupOptions: {
+				input: {
+					main: path.resolve(__dirname, 'index.html')
+				}
+			}
 		}
 	};
 };
