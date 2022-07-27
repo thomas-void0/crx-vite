@@ -9,5 +9,4 @@ build
 /postcss.config.js
 /commitlint.config.js
 /vite.config.ts
-
-
+/src/typings/*.d.ts

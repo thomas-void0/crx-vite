@@ -5,8 +5,8 @@ module.exports = {
 	tabWidth: 2,
 	// 使用tab进行缩进
 	useTabs: true,
-	// 行尾不需要有分号
-	semi: false,
+	// 行尾需要有分号
+	semi: true,
 	// 使用单引号
 	singleQuote: true,
 	// 对象的 key 仅在必要时用引号

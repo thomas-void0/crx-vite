@@ -21,5 +21,9 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    "linebreak-style": ['off'],
+    "no-tabs": ["error", { allowIndentationTabs: true }],
+    "indent": ["error", 'tab'],
+    "import/prefer-default-export": ['off']
   },
 };
