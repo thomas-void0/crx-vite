@@ -1,7 +1,9 @@
 import { ConfigEnv, UserConfig, loadEnv } from 'vite';
 
 import WindiCSS from 'vite-plugin-windicss';
+import { crx } from '@crxjs/vite-plugin';
 import legacy from '@vitejs/plugin-legacy';
+import manifest from './manifest.json';
 import path from 'path';
 import react from '@vitejs/plugin-react';
 import svgrPlugin from 'vite-plugin-svgr';
@@ -19,7 +21,8 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
 		svgrPlugin({
 			svgrOptions: { icon: true }
 		}),
-		WindiCSS()
+		WindiCSS(),
+		crx({ manifest })
 	];
 
 	if (isBuild) {
