@@ -3,7 +3,7 @@ dist
 build
 /node_modules
 /vite.config.ts
-/postcss.config.js
+/postcss.config.cjs
 /.eslintrc.cjs
 /stylelintrc.json
 /commitlint.config.cjs
