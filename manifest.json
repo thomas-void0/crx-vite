@@ -1,5 +1,8 @@
 {
 	"manifest_version": 3,
 	"name": "crx-vite",
-	"version": "1.0.0"
+	"version": "1.0.0",
+	"author": "thomas",
+	"permissions": ["storage", "tabs", "cookies", "proxy"],
+	"host_permissions": ["*://*/"]
 }
