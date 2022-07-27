@@ -1,0 +1,34 @@
+{
+  "name": "crx-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode development",
+    "test": "tsc && vite build --mode test",
+    "build": "tsc && vite build --mode production",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
+    "lint:style": "stylelint --cache --fix \"**/*.{less,postcss,scss,css}\" --cache --cache-location node_modules/.cache/stylelint/"
+  },
+  "lint-staged": {
+    
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "stylelint-config-standard": "^26.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "husky": "^8.0.1",
+    "postcss-less": "^6.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  }
+}
