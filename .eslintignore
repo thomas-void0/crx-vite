@@ -2,11 +2,10 @@ public
 dist
 build
 /node_modules
-/vite.config.js
+/vite.config.ts
 /postcss.config.js
-/.eslintrc.js
-/stylelint.config.js
-/postcss.config.js
-/commitlint.config.js
+/.eslintrc.cjs
+/stylelintrc.json
+/commitlint.config.cjs
 /vite.config.ts
 /src/typings/*.d.ts
