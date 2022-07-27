@@ -1,18 +1,20 @@
 import { defineConfig } from 'windicss/helpers';
-import formsPlugin from 'windicss/plugin/forms';
 
 export default defineConfig({
+	preflight: false,
+	prefixer: true,
 	darkMode: 'class',
 	prefix: 'wd-',
-	safelist: 'p-3 p-4 p-5',
 	theme: {
 		extend: {
 			colors: {
-				teal: {
-					100: '#096'
-				}
+				default: 'var(--text-color)',
+				primary: 'var(--primary-color)', // 主色
+				error: 'var(--error-color)', // 错误色
+				success: 'var(--success-color)', // 成功色
+				info: 'var(--info-color)', // 信息色
+				link: 'var(--link-color)' // 链接色
 			}
 		}
-	},
-	plugins: [formsPlugin]
+	}
 });
