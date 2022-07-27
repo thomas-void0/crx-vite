@@ -24,6 +24,18 @@ module.exports = {
     "linebreak-style": ['off'],
     "no-tabs": ["error", { allowIndentationTabs: true }],
     "indent": ["error", 'tab'],
-    "import/prefer-default-export": ['off']
+    "import/prefer-default-export": ['off'],
+    "import/no-unresolved": ['off'],
+    "comma-dangle": ["error", "never"],
+    "import/no-extraneous-dependencies": ['off'],
+    "react/react-in-jsx-scope": ['off'],
+    "react/jsx-no-target-blank": ['off'],
+    "react/jsx-indent": ['off'],
+    "import/order": ['off'],
+    "react/jsx-filename-extension": ['off'],
+    "react/button-has-type": ['off'],
+    "arrow-parens": ['off'],
+    "no-shadow": ['off'],
+    "react/jsx-one-expression-per-line": ['off']
   },
 };
