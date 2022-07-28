@@ -51,13 +51,13 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
 		},
 		plugins: _plugins,
 		build: {
-			target: 'es2015',
+			target: 'esNext',
 			chunkSizeWarningLimit: 2000,
 			sourcemap: VITE_NODE_ENV === 'development',
 			minify: VITE_NODE_ENV === 'production' ? 'esbuild' : false,
 			rollupOptions: {
 				input: {
-					main: path.resolve(__dirname, 'index.html')
+					options: path.resolve(__dirname, 'options.html')
 				}
 			}
 		}

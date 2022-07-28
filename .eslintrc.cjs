@@ -37,6 +37,8 @@ module.exports = {
     "arrow-parens": ['off'],
     "no-shadow": ['off'],
     "react/jsx-one-expression-per-line": ['off'],
-    "import/extensions": ['off']
+    "import/extensions": ['off'],
+    'react/function-component-definition': ['off'],
+    "arrow-body-style": ['off']
   },
 };
